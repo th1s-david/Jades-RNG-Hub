@@ -6,7 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "Jade's Hub", HidePremium = true, Int
 Tab1:AddButton({
 	Name = "Bypass admin panel security",
 	Callback = function()
-      if game.Players.LocalPlayer:FindFirstChild("Admin") then	game.Players.LocalPlayer.PlayerScripts.Admin:Destroy() end
+      if game.Players.LocalPlayer:FindFirstChild("Admin") then	game.Players.LocalPlayer.PlayerScripts.Admin.Enabled = false end
     local z =   game.StarterGui.AdminUI:Clone()
       z.Parent = game.Players.LocalPlayer.PlayerGui
       z.Frame.Visible = true
